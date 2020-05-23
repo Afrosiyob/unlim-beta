@@ -2,17 +2,26 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 50px;
+  height: 40px;
   left: 0;
   background-color: #d40000;
   display: none; }
-  .under-nav ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center; }
+  .under-nav .container {
+    padding-left: 190px;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important; }
+    @media all and (max-width: 992px) {
+      .under-nav .container {
+        padding: 0; } }
+    .under-nav .container ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center; }
+      .under-nav .container ul li a {
+        font-size: 13px; }
 
 div.last-tab .left-item .inner-box h5 {
   color: white;
@@ -212,24 +221,40 @@ div.last-tab .right-item {
     flex-direction: row;
     justify-content: center; }
     .section-tab .wrapper-tab .tabs .container .tab {
+      position: relative;
       width: 100%;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
       border: 1px solid grey;
       border-bottom: none;
-      height: 70px; }
+      height: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       .section-tab .wrapper-tab .tabs .container .tab div.line {
         width: 60px;
         background-color: red;
         height: 4px;
-        margin-left: 20px; }
+        margin: 0;
+        margin-top: 5px !important; }
         @media all and (max-width: 992px) {
           .section-tab .wrapper-tab .tabs .container .tab div.line {
-            margin-left: 10px !important; } }
+            width: 30px;
+            margin-left: 15px !important; } }
+      .section-tab .wrapper-tab .tabs .container .tab div.line-one {
+        margin-left: 27px; }
+      .section-tab .wrapper-tab .tabs .container .tab div.line-two {
+        margin-left: 50px; }
+      .section-tab .wrapper-tab .tabs .container .tab div.line-three {
+        margin-left: 45px; }
+      .section-tab .wrapper-tab .tabs .container .tab div.line-four {
+        margin-left: 44px; }
       .section-tab .wrapper-tab .tabs .container .tab p {
-        width: 100%;
+        padding: 0;
+        margin: 0;
+        width: auto;
         text-align: center;
-        font-size: 30px; }
+        font-size: 25px; }
         @media all and (max-width: 961px) {
           .section-tab .wrapper-tab .tabs .container .tab p {
             font-size: 14px; } }

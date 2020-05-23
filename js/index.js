@@ -140,9 +140,14 @@ $(document).ready(function () {
 	}).eq(0).addClass("active");
 
    
-  $('.drop-down-btn').click(function (e) { 
-      
-      $('.under-nav').slideToggle();
+  
+
+  $( ".drop-down-btn" ).hover(function() {
+    $('.under-nav').slideDown();
+  });
+
+  $('.under-nav').mouseleave(function () { 
+    $(this).slideUp();
   });
 
 
