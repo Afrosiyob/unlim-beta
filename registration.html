@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Unlim</title>
+
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+    <!-- Change the Color of Header Bar in Browsers -->
+    <meta name="theme-color" content="#FF0000">
+    <meta name="msapplication-navbutton-color" content="#FF0000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FF0000">
+
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body>
+    <!-- Search block -->
+    <div class="search-block">
+        <div class="container">
+			<div class="search-wrapper">
+				<form action="/" method="GET" class="search-form">
+					<input type="text" name="search" id="search-input" placeholder="Search keyword and hit enter ...">
+				</form>
+		
+				<button class="search-close ml-auto"><img src="img/icons/close_white.png" alt=""></button>
+			</div>
+		</div>
+    </div>
+	<!-- End of search block -->
+	
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-red sticky-top">
+        <div class="container">
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""></a>
+
+			<ul class="navbar-nav flex-row extra-bar-toggle">
+				<li class="nav-item mr-3">
+					<a href="#" class="nav-link">
+						<img src="img/icons/search.svg" alt="search" class="search-btn">
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="dashboard.html" class="nav-link">
+						<img src="img/icons/user.svg" alt="user" class="user-btn">
+					</a>
+				</li>
+			</ul>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mt-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="countries.html">WORLDWIDE DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#country-data">COUNTRY DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">MAP COVERAGE</a>
+                    </li>
+                    <li class="nav-item ml-2rem">
+                        <a href="cooperation.html" class="unlim-btn">COOPERATION</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mt-4">
+                    <li class="nav-item dropdown mr-1">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USD <img src="img/icons/down-arrow.svg" class="drowdown-icon" alt="">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">RUB</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                        </div>
+					</li>
+					
+                    <li class="nav-item dropdown mr-1">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ENG <img src="img/icons/down-arrow.svg" class="drowdown-icon" alt="">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">RUS</a>
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">DEU</a>
+                        </div>
+					</li>
+					
+                    <li class="nav-item mr-1 extra-bar-toggle-large">
+                        <a href="#" class="nav-link">
+							<img src="img/icons/search.svg" alt="search" class="search-btn">
+						</a>
+					</li>
+					
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link extra-bar-toggle-large">
+                            <img src="img/icons/user.svg" alt="user" class="user-btn">
+                        </a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+    </nav>
+	<!-- End of navbar -->
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="title">
+                    <div class="red-line mx-auto mb-2"></div>
+                    <h4 class="title-heading text-center font-weight-semibold">Registration</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="offset-xl-2 col-xl-8 col-lg-12">
+                <form action="" class="d-block">
+					<p>Contact information</p>
+					
+					<div class="input-group">
+						<input type="email" class="form-control" id="email" placeholder="* Email">
+					</div>
+					
+					<p class="mt-4">Billing information</p>
+					
+					<div class="row mb-3">
+						<div class="col-md-6 mb-3 mb-md-0">
+							<div class="input-group">
+								<input type="text" class="form-control" id="first_name" placeholder="* First name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-group">
+								<input type="text" class="form-control" id="last_name" placeholder="* Last name">
+							</div>
+						</div>
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" id="password" placeholder="* Password">
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" id="repeat_password" placeholder="* Repeat your password">
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" id="address" placeholder="Address">
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" id="address_detail" placeholder="Apartment, suite, etc.">
+					</div>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" id="city" placeholder="* City">
+					</div>
+					
+					<div class="row mb-3">
+						<div class="col-md-6 mb-3 mb-md-0">
+							<div class="input-group">
+								<select name="country" id="country" class="form-control">
+									<option value="" selected>* Country/Region</option>
+									<option value="ukraine">Ukraine</option>
+									<option value="russia">Russia</option>
+									<option value="uzbekistan">Uzbekistan</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="input-group">
+								<input type="text" class="form-control" id="post_code" placeholder="Post code">
+							</div>
+						</div>
+					</div>
+
+					<div class="input-group border-right-none mb-3">
+						<input type="text" class="form-control" id="phone_number" placeholder="Phone number">
+						
+						<div class="input-group-append">
+							<span class="input-group-text input-inline-icon" data-url="http://google.com" data-toggle="tooltip" data-placement="bottom" title="Reference: http://google.com">
+								<img src="img/icons/question.svg">
+							</span>
+						  </div>
+					</div>
+					
+					<div class="input-group mb-3">
+						<p class="text-red">* Please fill in the fields with asterisks</p>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" class="buy-link-red" value="Complete">
+                    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+	<div class="container-fluid footer mt-5 pb-3">
+		<div class="row">
+			<div class="container mt-5">
+				<div class="d-flex mb-2">
+					<h4>CONTACT US</h4>
+				</div>
+
+				<div class="row">
+					<!-- WhatsApp -->
+					<div class="col-lg-3 col-sm-6 mb-3">
+						<p class="font-weight-semibold">WhatsApp</p>
+						<p>+49 36628 60335</p>
+					</div>
+
+					<!-- Email -->
+					<div class="col-lg-3 col-sm-6 mb-3">
+						<p class="font-weight-semibold">Email</p>
+						<p>info@unlimsim.com</p>
+						<p>help@unlimsim.com</p>
+					</div>
+
+					<div class="col-lg-6 col-sm-12 mb-3">
+						<p class="font-weight-semibold">Address</p>
+						<p>Germany: 07937 Zeulenroda Triebes, August-Bebel-Str. 8</p>
+					</div>
+				</div>
+
+				<!-- Mobile Apps -->
+				<div class="row">
+					<div class="offset-lg-3 col-lg-9 col-sm-12">
+						<p class="font-weight-semibold mb-2">Mobile App</p>
+						
+						<!-- Download mobile app -->
+						<div class="app_grid">
+							<button class="apple_btn" data-toggle="modal" data-target="#appStoreModal">
+								<span class="icon">
+									<img src="./img/icons/apple-store.svg" alt="ios">
+								</span>
+								<span class="title">App Store</span>
+								<span class="subtitle">Available now on the</span>
+							</button>
+
+							<button class="play_store_btn" data-toggle="modal" data-target="#appStoreModal">
+								<span class="icon">
+									<img src="./img/icons/google-play.svg" alt="android">
+								</span>
+								<span class="title">Google Play</span>
+								<span class="subtitle">Get in on</span>
+							</button>
+						</div>
+					</div>	
+				</div>
+
+				<div class="footer-bottom mt-5">
+					<div class="footer-el-1">
+						<span class="small-text"> © 2020 UNLIM </span>
+					</div>
+					<div class="footer-el-2">
+						<a href="#"><img src="img/icons/fb.svg" alt=""></a>
+						<a href="#"><img src="img/icons/in.svg" alt=""></a>
+						<a href="#"><img src="img/icons/ig.svg" alt=""></a>
+					</div>
+					<div class="footer-el-3">
+						<a href="#"><img src="img/icons/pay-2.svg" alt=""></a>
+						<a href="#"><img src="img/icons/pay-3.svg" alt=""></a>
+						<a href="#"><img src="img/icons/pay-4.svg" alt=""></a>
+						<a href="#"><img src="img/icons/pay-1.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- JS Files -->
+	<script src="dist/main.js"></script>
+</body>
+
+</html>

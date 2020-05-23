@@ -1,0 +1,966 @@
+::placeholder
+	color: #FFF
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-image: url('../img/src/map.png')
+	background-attachment: fixed
+
+input, textarea
+	border: #666 1px solid
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+input, select, textarea
+	border-radius: .5rem !important
+ 
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+
+.white-space-nowrap
+	white-space: nowrap
+
+.height
+	min-height: 100vh
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-red
+	color: #FF0000
+
+.text-gray
+	color: #333
+
+.bg-red
+	background-color: $accent
+
+.font-weight-semibold
+	font-weight: 600
+
+.filter-gray
+	filter: grayscale(1)
+	opacity: .5
+
+// ==== NAVIGATION ====
+.nav-link
+	color: #fff !important
+	font-size: 12px
+	font-weight: 600
+// .nav-item.push-top
+// 	position: relative
+// 	bottom: 5px
+// 	word-spacing: 1px
+.unlim-search
+	padding: 5px 15px 5px 30px
+	border-radius: 30px
+	background-color: #DF0000
+	color: #FFF
+	border: none
+	background-image: url('../img/icons/search.svg')
+	background-repeat: no-repeat
+	background-size: 15px
+	background-position: 10px 10px
+	&::placeholder
+		color: rgba(#FFF, 0.5)
+
+.unlim-btn
+	color: $accent
+	background-color: #fff
+	padding: 5px 15px
+	margin: 0 0.5rem
+	border-radius: 16px
+	font-weight: bold
+	text-decoration: none
+	border: 1px solid #FFF
+	// transition: all 0.2s 0.2s ease
+	&:hover
+		color: $accent
+		text-decoration: none
+		box-shadow: 0 5px 10px rgba(0,0,0,0.16)
+
+.search-btn, .user-btn
+	width: 20px
+	cursor: pointer
+
+// ==== SEARCH BLOCK ====
+.search-block
+	position: fixed
+	left: 100%
+	top: 0
+	width: 100%
+	height: 77.5px
+	background-color: rgba($accent, 1)
+	z-index: 9999
+	.search-wrapper
+		display: flex
+		padding: 22px 0
+		// justify-content: center
+	.search-close
+		background-color: transparent
+		border: none
+		outline: none
+		z-index: 9999
+		img
+			width: 32px
+	.search-form
+		width: 100%
+		// display: flex
+		// justify-content: space-between
+
+		input
+			width: 100%
+			height: 100%
+			font-size: 20px
+			background-color: transparent
+			border: none
+			letter-spacing: 1px
+			color: #fff
+			&::placeholder
+				color: #ffcccc
+			&::selection
+				background-color: #fff
+				color: $accent
+
+// ==== CAROUSEL ====
+.carousel-caption
+	bottom: 65px
+	.carousel-title
+		.red-element
+			display: block
+			width: 60px
+			height: 5px
+			background-color: $accent
+			padding-bottom: 0px
+		h1
+			margin-top: 10px
+			position: relative
+			font-size: 52px
+			text-align: left
+			font-weight: 600
+.carousel-indicators
+	li.active
+		background-color: $accent
+.text-center
+	text-align: center
+
+.red-line
+	display: block
+	height: 5px
+	width: 60px
+	// margin-bottom: 10px
+	background-color: $accent
+
+.scale-on-hover
+	transition: all .2s ease-in-out
+	&:hover
+		transform: scale(1.04)
+
+.unlim
+	margin-top: 60px
+	&-headline
+		font-weight: 600
+	&-paragraph
+		font-weight: 600
+		font-size: 18px
+	&-plan
+		position: relative
+		margin-bottom: 25px
+		background-image: linear-gradient($accent, #A40000, #830000)
+		border-radius: 20px
+		padding: 30px
+		overflow: hidden
+		cursor: pointer
+		// &:hover
+		// 	box-shadow: 0px 0px 5px 5px rgba(255,0,0,1)
+		img
+			display: block
+			width: 70px
+			margin-bottom: 10px
+		&-title
+			position: absolute
+			right: 0
+			// display: block
+			// position: relative
+			// left: 90px
+			color: #ffffff
+			border: 1px solid #FFF
+			padding: 10px 35px 10px 15px
+			border-radius: 30px 0 0 30px
+			border-right: none
+			font-size: 16px
+			font-style: italic
+		&-size
+			font-size: 120px
+			text-align: center
+			font-weight: 600
+			color: #FFF
+			margin-top: 70px
+			line-height: 0.9
+			.size-gb
+				font-size: 80px
+		.white-line
+			height: 6px
+			width: 60%
+			background-color: #fff
+			margin: auto
+			border-radius: 10px
+		&-price
+			font-size: 24px
+			color: #FFF
+			font-weight: 600
+			text-align: center
+			font-style: italic
+			span
+				font-size: 52px
+		&-link
+			color: #ffffff
+			font-weight: 600
+			padding: 5px 45px		
+			border: 1px solid #ffffff
+			border-radius: 15px
+			text-align: center
+			display: block
+			margin: auto
+			transition: 0.1s 0.1s ease
+			&:hover
+				background-color: #fff
+				color: $accent
+				text-decoration: none
+	&-additional
+		color: #707070
+		font-weight: 600
+		font-size: 14px
+	.ptw
+		.item-link
+			color: #000
+			text-decoration: none
+		.item
+			font-size: 18px
+			font-weight: 600
+			margin: 15px 10px
+			text-align: center
+			input, select
+				min-width: 220px
+			p
+				.round-red
+					color: $accent
+					border: 2px solid $accent
+					border-radius: 100%
+					width: 50px
+					height: 50px
+					padding: 5px 7px
+					font-size: 24px
+				.big-price
+					font-size: 48px
+					line-height: 0.5
+			.text-red-italic
+				color: $accent
+				font-style: italic
+			.buy-link
+				color: $accent
+				border: 3px solid $accent
+				padding: 5px 60px
+				font-weight: 600
+				border-radius: 15px
+				font-size: 24px
+				transition: all 0.1s 0.1s ease
+				&:hover
+					background-color: $accent
+					color: #FFF
+					text-decoration: none
+				&.disabled
+					color: $accent
+					background-color: transparent
+					filter: grayscale(1)
+					opacity: .5
+					cursor: not-allowed
+					text-decoration: none
+	.tarif-wrapper
+		position: relative
+		&::after
+			position: absolute
+			top: 6px
+			right: 13px
+			font-size: .9em
+			color: #999
+			transition: all .05s ease-in-out
+		&.suffix-gb::after
+			content: 'GB'
+
+	.continent-list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 100%
+		li
+			display: inline
+			list-style: none
+			color: $accent
+			border: 1px solid $accent
+			border-radius: 100px
+			padding: 0px 30px
+			margin: 5px
+			text-align: center
+			transition: all 0.1s 0.1s ease
+			&:hover
+				background-color: $accent
+				color: #ffffff
+				cursor: pointer
+		.active
+			background-color: $accent
+			color: #FFF
+		
+	.title
+		text-align: center
+		font-weight: 600
+		&-heading
+			font-weight: 600
+			span
+				color: $accent
+		&-heading-large
+			font-size: 28px
+		&-subtitle
+			font-size: 18px
+			margin-bottom: 0
+	.headline
+		span
+			color: $accent
+	.h2a
+		.link
+			color: $accent
+			border: 3px solid $accent
+			border-radius: 30px
+			padding: 10px
+			margin: 0 20px
+			width: 170px
+			text-align: center
+			font-weight: bold
+			cursor: pointer
+			&.active
+				background-color: $accent
+				color: #FFF
+				text-decoration: none
+	.instruction
+		&-header
+			font-weight: 600
+			margin-bottom: 30px
+		&-step
+			margin-bottom: 30px
+		&-image
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			img
+				margin: 10px
+				max-width: 230px
+		.red-border
+			border: 1px solid $accent
+			color: $accent
+			border-radius: 30px
+			padding: 0 10px
+			margin-right: 8px
+		.semibold
+			font-weight: 600
+	.country-text
+		font-weight: normal
+		color: #777
+		width: 70%
+		margin: auto
+
+.text-red-italic
+	font-weight: 600
+	color: $accent
+	font-style: italic
+	.big-price
+		font-size: 48px
+		line-height: 0.5
+.text-dark
+	color: #000
+	font-weight: 600
+	font-style: italic
+	.big-price
+		color: #000
+		font-size: 36px
+.strike
+	position: relative
+	// margin-top: 25px
+	&::before
+		position: absolute
+		left: 0
+		top: 0
+		width: 160px
+		content: ""
+		height: 2px
+		margin-top: 30px
+		background-color: #000
+		transform: rotate(10deg)
+.buy-link-red
+	color: #ffffff
+	background-color: $accent
+	padding: 8px 40px
+	font-size: 20px
+	text-align: center
+	border-radius: 15px
+	position: relative
+	border: none
+	&:hover
+		text-decoration: none
+		color: #FFF
+			
+.footer
+	background-color: $accent
+	color: #FFF
+	h4
+		font-weight: 600
+	p
+		margin-bottom: 0
+	.small-text
+		font-size: 12px
+.img-filter
+	filter: grayscale(1)
+	opacity: .5
+	&-headline
+		font-size: 18px
+		font-weight: 600
+		color: #000000
+		line-height: 1.35
+		.highlight-text
+			white-space: nowrap
+			color: $accent
+			font-weight: 600
+			font-style: italic
+			span
+				font-size: 24px
+	.red-button
+		background-color: $accent
+		color: #ffffff
+	.buy-link-red
+		font-size: 18px
+
+.backdrop-overlay
+	background-color: rgba(255,255,255,0.5)
+	backdrop-filter: blur(10px)
+	position: absolute
+	left: 0
+	top: 0
+	bottom: 0
+	right: 0
+	z-index: 8888
+.backdrop-image
+	display: flex
+	height: 100vh
+	justify-content: center
+	align-items: center
+	width: 100%
+	position: fixed
+	z-index: 9999
+	.tu-img
+		display: block
+		width: 50%
+.instruction
+	display: none
+
+.user
+	margin-top: 60px
+	&-info
+		&-image
+			border-radius: 100%
+			width: 100px
+			height: 100px
+			img
+				width: 100%
+		&-name
+			margin-left: 1.5rem
+			h4
+				font-weight: 600
+			span
+				font-size: 11px
+				line-height: 0
+				color: #B9B9B9
+			p
+				line-height: 1
+	&-details
+		ul
+			padding-left: 1.5rem
+			border-left: 3px solid $accent
+			list-style: none
+			li
+				color: #707070
+				img
+					width: 15px
+					height: auto
+				span
+					margin-left: 10px
+
+// DASHBOARD
+.dashboard-content
+	justify-content: space-between
+	flex-wrap: wrap
+	flex-direction: row
+
+.dashboard
+	.flex-item
+		margin-bottom: 20px
+		&-top
+			margin-bottom: 12px
+			&-title
+				font-size: 49px
+				span
+					font-size: 21px
+			&-select
+				width: 150px
+				padding: 8px 20px
+				border-radius: 20px
+				outline: none
+			.custom-margin
+				font-size: 33px
+		&-center
+			&-title
+				font-size: 16px
+				line-height: 0
+			&-progress
+				max-width: 150px
+				height: 13px
+				border: 1px solid $accent
+				border-radius: 30px
+				margin-top: -15px
+				&-fill
+					background-color: $accent
+					height: 100%
+					width: 0
+					border-radius: 30px
+			&-button
+				display: block
+				text-align: center
+				background-color: $accent
+				padding: 0px 50px
+				font-size: 26px
+				border: none
+				border-radius: 15px
+				color: #FFF
+				text-decoration: none
+		&-bottom
+			&-title
+				font-size: 10px
+				line-height: 0
+.sale-card
+	margin-top: 1rem
+	justify-content: flex-start
+	&-item
+		margin-right: 2rem
+
+.table-toggler, .table-toggler-sm
+	cursor: pointer
+	min-width: 212px
+	.arrow
+		transition: all 0.1s 0.2s ease
+	.arrow-closed
+		transform: rotate(180deg)
+.table-toggler-sm
+	min-width: 182px
+	font-size: 120%
+
+.line
+	display: block
+	width: 100%
+	height: 1px
+	margin-top: 1rem	
+	background-color: #ff0000
+
+.dashboard-user-info
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-end
+	ul
+		list-style: none
+		padding-left: 0
+		li
+			float: left
+			margin-left: 15px
+			font-size: 12px
+			color: #707070
+			img
+				margin-right: 5px
+			a
+				color: #B9B9B9
+#dashboard-table
+	overflow-x: auto
+.dashboard-table
+	.border-none
+		border: none
+	tr
+		margin-top: 20px
+		border-bottom: 1px solid silver
+		th
+			color: $accent
+			font-weight: normal
+			font-size: 12px
+			white-space: nowrap
+		td
+			padding-top: 15px
+			font-size: 14px
+			min-width: 80px
+			&.cell-wider
+				min-width: 130px
+			.buy-again
+				color: $accent
+				padding: 0px 15px
+				border: 1px solid $accent
+				border-radius: 50px
+				transition: all 0.2s 0.2s ease
+				&:hover
+					text-decoration: none
+					background-color: $accent
+					color: #FFF
+
+.line-height-0
+	padding-top: 8px!important
+	padding-bottom: 8px!important
+	line-height: 1.3
+	font-style: italic
+	font-weight: 600
+.font-semibold
+	font-weight: 600
+.font-bigger
+	font-size: 58px!important
+	position: relative
+	bottom: 5px
+	span
+		font-size: 35px!important
+
+.map
+	&-filter
+		div[class^="map-item-"]
+			margin-right: 1.5rem
+		div.map-item-5
+			margin-right: 0
+		.map-item-1
+			.map-filter-input
+				width: 100%
+		.map-item-2, .map-item-3
+			.map-filter-input
+				width: 150px
+		.d-flex
+			flex-direction: row
+		&-input
+			border: 1px solid #707070
+			padding: .5rem .75rem
+			font-size: 1rem
+			font-weight: 400
+			line-height: 1.5
+			&::placeholder
+				color: #707070
+		.w-380
+			width: 380px
+		.w-160
+			width: 160px
+		.text-big
+			font-size: 40px
+		.f-22
+			font-size: 22px
+		.outlined-btn
+			border: 2px solid $accent
+			color: $accent
+			padding: 3px 43px
+			border-radius: 15px
+			&:hover
+				text-decoration: none
+				color: #FFF 
+				background-color: $accent
+			&.disabled
+				color: $accent
+				background-color: transparent
+				filter: grayscale(1)
+				opacity: .5
+				cursor: not-allowed
+				text-decoration: none
+		.f-23
+			font-size: 23px
+		.lh-0
+			line-height: 1
+	&-country
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		flex-direction: row
+		&-list
+			list-style: none
+			padding-left: 0
+			display: block
+			width: 25%
+			li
+				display: block
+				width: 100%
+				color: #000
+				margin-top: 10px
+				margin-bottom: 10px
+				font-size: 14px
+				padding: 5px 15px
+				cursor: pointer
+				text-transform: uppercase
+				&:hover
+					background-color: #B9B9B9
+			.active
+				background-color: rgba($accent, 0.19)
+				color: $accent
+				font-weight: 600
+				&:hover
+					background-color: rgba($accent, 0.19)
+.buy-form-plan
+	// margin-bottom: 1.5rem
+.buy-form-text
+	color: #333
+
+.credit-cards
+	width: 100%
+	// padding: 0 3px
+	label
+		position: relative
+		margin-right: 10px
+	// HIDE RADIO
+	input[type=radio]
+		position: absolute
+		opacity: 0
+		width: 0
+		height: 0
+	// IMAGE STYLES
+	input[type=radio] + img
+		cursor: pointer
+		border-radius: 5px
+		border: 2px solid transparent
+	// CHECKED STYLES
+	input[type=radio]:checked + img
+		border-color: #f00
+
+// Login page
+.login
+	background-image: url('../img/src/login-bg.jpg')
+	background-position: center
+	background-size: cover
+	&-wrapper
+		height: 100vh
+		display: flex
+		align-items: center
+	&-logo
+		display: block
+		width: 200px
+	&-form-block
+		width: 100%
+		min-height: 300px
+		background-color: rgba(#FFF, 0.9)
+		border-radius: 20px
+		box-shadow: 0 3px 6px rgba(#000, 0.16)
+		padding: 40px
+		h5
+			font-weight: 600
+		form
+			input
+				height: 45px
+				padding: .5rem 1.5rem
+				border-radius: 12px!important
+				&::placeholder
+					color: #aaa
+			label
+				font-size: 14px
+				padding-left: 1.5rem
+				font-weight: 600
+				color: #707070
+			.login-submit
+				display: block
+				min-width: 150px
+				height: 45px
+				padding: .5rem 1.5rem
+				line-height: 1.5
+				margin-top: 36px
+				margin-left: auto
+				margin-right: auto
+				font-weight: 600
+				background-color: #fff
+				border: 1px solid #707070
+				border-radius: 12px				
+				&:hover
+					background-color: $accent
+					color: #FFF
+					border: none
+			.login-action
+				display: flex
+				justify-content: center
+				font-weight: 600
+				font-size: 14px
+				a, span
+					color: #6c757d
+
+.rounded-input
+	border-radius: 30px!important
+.f-16
+	font-size: 16px
+.f-30
+	font-size: 30px
+	
+b, strong
+	font-weight: bold
+
+
+// Additional SASS
+.navbar-brand
+	margin-right: 2rem
+	img
+		width: 150px
+		height: auto
+.footer-logo
+	width: 150px
+	height: auto
+	cursor: pointer
+
+.ml-2rem
+	margin-left: 2rem
+.ml-6rem
+	margin-left: 6.25rem
+.mt-12px
+	margin-top: 12px !important
+.mb-20px
+	margin-bottom: 20px
+.mb-80px
+	margin-bottom: 74px
+.mb-42px
+	margin-bottom: 42px
+.mb-44px
+	margin-bottom: 44px
+
+.w-38
+	width: 38%!important
+.mw-190
+	max-width: 190px!important
+.mw-265
+	min-width: 265px!important
+
+.input-inline-icon
+	background-color: #fff
+	cursor: pointer
+	// border-left: none
+	img
+		width: 16px
+		height: 16px
+
+.cooperation-content
+	align-items: flex-end
+	margin-top: 2rem
+	img
+		width: 100%
+
+.drowdown-icon
+	width: 10px
+	height: auto
+	margin-left: 3px
+
+// Update bootstrap dropdown toggle icon
+.dropdown-toggle::after
+    display: none
+
+.close-instructions
+	display: block
+	text-decoration: none
+	cursor: pointer
+	&:hover
+		text-decoration: none
+
+	img
+		width: 30px
+		height: auto
+
+#close-instructions
+	display: none
+.extra-bar-toggle
+	display: none
+#contact-information
+	display: none
+
+// Mobile apps
+.app_grid
+	display: flex
+	.apple_btn, .play_store_btn
+		position: relative
+		color: #fff
+		background-color: #FF0000
+		border: 1px solid #fff
+		border-radius: 10px
+		height: 75px
+		margin-right: 20px
+		max-width: 220px
+		width: 100%
+		text-align: left
+		line-height: normal
+		-webkit-transition: all 0.3s ease
+		-o-transition: all 0.3s ease
+		transition: all 0.3s ease
+		// &:hover
+		// 	border: 1px solid #aaa
+		span
+			color: #fff
+			margin-right: 5px
+			&.title
+				color: #fff
+		.icon
+			font-size: 36px
+			float: left
+			padding: 6px 0
+			margin-right: 10px
+			margin-left: 12px
+			img
+				display: block
+				width: 36px
+		.title
+			display: block
+			font-size: 16px
+			font-family: $default-font
+			margin-top: 3px
+		.subtitle
+			font-size: 13px
+			font-family: $default-font
+		
+	.play_store_btn
+		margin-right: 0
+		.icon
+			padding: 6px 0
+			img
+				width: 36px
+
+.footer-bottom
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+#appStoreModal
+	.modal-header, .modal-footer
+		border: none
+
+.border-right-none
+	.form-control
+		border-right: 0!important
+		border-top-right-radius: 0!important
+		border-bottom-right-radius: 0!important
+	.input-group-text
+		border-top-right-radius: .5rem!important
+		border-bottom-right-radius: .5rem!important
