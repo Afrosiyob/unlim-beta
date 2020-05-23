@@ -223,8 +223,9 @@ div.last-tab .right-item {
         background-color: red;
         height: 4px;
         margin-left: 20px; }
-      .section-tab .wrapper-tab .tabs .container .tab div.line:nth-child(2) {
-        margin-left: 20px !important; }
+        @media all and (max-width: 992px) {
+          .section-tab .wrapper-tab .tabs .container .tab div.line {
+            margin-left: 10px !important; } }
       .section-tab .wrapper-tab .tabs .container .tab p {
         width: 100%;
         text-align: center;
