@@ -532,7 +532,9 @@ div.last-tab .right-item {
       justify-content: space-between;
       align-items: center;
       align-content: center;
-      padding: 20px; }
+      padding: 20px;
+      transition: all 0.2s linear;
+      border: 2px solid transparent; }
       @media all and (max-width: 992px) {
         .section-tab .slide:nth-child(1) div.item {
           margin: 0 10px; } }
@@ -593,7 +595,8 @@ div.last-tab .right-item {
         color: white;
         border-radius: 15px;
         font-size: 20px;
-        font-weight: bolder; }
+        font-weight: bolder;
+        transition: all 0.2s linear; }
       .section-tab .slide:nth-child(1) div.item p {
         padding: 0;
         margin: 0;
@@ -617,5 +620,12 @@ div.last-tab .right-item {
           .section-tab .slide:nth-child(1) div.item .top3 .box-item p {
             text-align: center;
             width: 52px; }
+      .section-tab .slide:nth-child(1) div.item:hover {
+        border: 2px solid white; }
+        .section-tab .slide:nth-child(1) div.item:hover a.btn-buy {
+          background-color: red;
+          color: white !important;
+          width: 250px;
+          border-color: red; }
 
 /*# sourceMappingURL=index.css.map */

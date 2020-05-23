@@ -767,6 +767,7 @@ div.last-tab {
         
 
         div.item {
+
             width: 300px;
             height: 450px;
             @media all and (max-width:992px) {
@@ -860,6 +861,7 @@ div.last-tab {
                 border-radius: 15px;
                 font-size: 20px;
                 font-weight: bolder;
+                transition: all 0.2s linear;
             }
 
             p {
@@ -894,6 +896,18 @@ div.last-tab {
                     }
                 }
 
+            }
+
+            transition: all 0.2s linear;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid white;
+                a.btn-buy {
+                    background-color:red;
+                    color: white !important;
+                    width: 250px;
+                    border-color: red;
+                }
             }
         }
     }
