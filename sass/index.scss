@@ -1,11 +1,30 @@
-
-.map-filter div[class^="map-item-"]  {
+.map-filter div[class^="map-item-"] {
     margin-right: 0 !important;
     border-radius: 20px !important;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border-radius: 20px !important;
+}
+
+li.let {
+    color: rgb(212, 0, 0);
+    padding: 10px;
+    pointer-events: none;
+}
+
+.map-item-1 {
+    position: relative;
+
+    input {
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .under-nav {
@@ -17,22 +36,25 @@ input, select, textarea {
     background-color: rgb(212, 0, 0);
     display: none;
 
-    .container{
+    .container {
         padding-left: 190px;
         padding-bottom: 0 !important;
         margin-bottom: 0 !important;
-        @media all and (max-width:992px){
+
+        @media all and (max-width:992px) {
             padding: 0;
-            
+
         }
+
         ul {
-        
+
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             align-content: center;
+
             li {
                 a {
                     font-size: 13px;
@@ -59,9 +81,27 @@ div.last-tab {
                     align-items: center;
                     align-content: center;
 
+                    .last-text {
+                        position: relative;
+                        width: 100%;
+                        color: transparent;
+                        p {
+                            position: absolute;
+                            left: 0;
+                            top: -18px;
+                            width: 200px;
+                            @media all and ( max-width:762px ) {
+                                left: 20px;
+                                top: -10px;
+                            }
+                        }
+                    }
+
                     div {
                         select {
+                            border-radius: 10px !important;
                             width: 100%;
+
                             @media all and (max-width:576px) {
                                 margin: 5px 0;
                             }
@@ -70,10 +110,11 @@ div.last-tab {
                         p {
                             font-style: italic;
                             color: white;
-                            font-weight: bold;
-
+                            
+                            padding: 0;
+                            margin: 0;
                             span {
-                                font-size: 40px;
+                                font-size: 30px;
                             }
                         }
                     }
@@ -82,19 +123,20 @@ div.last-tab {
         }
 
     }
-    
+
 
     .right-item {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-       
-        
+
+
         fieldset {
             width: 300px;
             float: right;
-            @media all and ( max-width:768px) {
+
+            @media all and (max-width:768px) {
                 width: 100%;
             }
 
@@ -116,6 +158,8 @@ div.last-tab {
                 flex-direction: column;
 
                 p {
+                    padding: 0;
+                    margin: 0;
                     width: 100%;
                     text-align: left;
                     color: #FFFFFF;
@@ -138,35 +182,60 @@ div.last-tab {
                 justify-content: space-around;
 
                 .form-check {
+
+
+                    div.circle {
+                        margin-right: 5px;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 18px;
+                        border: 2px solid white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        position: relative;
+
+                        .inner {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);    
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 10px;
+                            background-color: transparent;
+                        }
+                    }
+
+                    .form-check-input[type=radio]:checked ~ div.circle > .inner {
+                        background-color: white;
+                    }
+
+
+
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    align-items: flex-end;
+                    align-items: center;
                     align-content: flex-end;
 
                     input {
+                        display: none;
                         margin-top: 20px;
+
                     }
 
                     label {
                         color: white;
                         font-weight: bolder;
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
 
-                .form-check-input[type=radio]:not(:checked)+label:after,
-                .form-check-input[type=radio]:not(:checked)+label:before,
-                label.btn input[type=radio]:not(:checked)+label:after,
-                label.btn input[type=radio]:not(:checked)+label:before {
-                    border: 2px solid white !important;
-                }
 
-                .form-check-input[type=radio].with-gap:checked+label:after,
-                .form-check-input[type=radio]:checked+label:after,
-                label.btn input[type=radio].with-gap:checked+label:after,
-                label.btn input[type=radio]:checked+label:after {
-                    background-color: white !important;
-                }
             }
         }
 
@@ -175,28 +244,39 @@ div.last-tab {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-end;
 
             h3 {
+                
                 color: white;
-                font-weight: bold;
+                font-weight: 600;
                 display: flex;
                 flex-direction: row;
-
-                span {
-                    font-size: 52px;
+                padding: 0;
+                margin: 0;
+                em {
+                    padding: 0;
+                    margin: 0;
+                    span {
+                        font-size: 52px;
+                    }
                 }
+                
             }
 
             button {
+                height: 40px;
                 background-color: #fff;
                 color: red;
-                font-size: 32px;
-                padding: 10px 40px;
+                font-size: 22px;
+                line-height: 50%;
+                padding: 5px 50px !important;
                 border-radius: 10px;
                 border: none;
                 outline: none;
                 font-weight: bold;
                 margin-left: 20px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -217,7 +297,7 @@ div.last-tab {
             background-color: white !important;
         }
 
-        
+
     }
 
     .tab_item {
@@ -231,6 +311,15 @@ div.last-tab {
     .tab_content {
         background: transparent linear-gradient(180deg, #FF0000 0%, #800000 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 5px 6px #00000029;
+
+        .bg-img {
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/Map.png');
+            background-repeat: no-repeat;
+            background-size: 85% auto;
+            background-position: right 15% bottom 10%;
+        }
     }
 
 
@@ -246,7 +335,7 @@ div.last-tab {
 
                 .tab {
                     position: relative;
-                 
+
                     width: 100%;
                     border-top-right-radius: 20px;
                     border-top-left-radius: 20px;
@@ -257,8 +346,8 @@ div.last-tab {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                   
-                   
+
+
 
                     div.line {
                         width: 60px;
@@ -266,7 +355,8 @@ div.last-tab {
                         height: 4px;
                         margin: 0;
                         margin-top: 5px !important;
-                        @media all and (max-width:992px){
+
+                        @media all and (max-width:992px) {
                             width: 30px;
                             margin-left: 15px !important;
                         }
@@ -274,27 +364,30 @@ div.last-tab {
 
 
                     div.line-one {
-                        
+
                         margin-left: 27px;
-                        
+
                     }
+
                     div.line-two {
-                        
+
                         margin-left: 50px;
-                        
+
                     }
+
                     div.line-three {
-                        
+
                         margin-left: 45px;
-                        
+
                     }
+
                     div.line-four {
-                        
+
                         margin-left: 44px;
-                        
+
                     }
-                    
-                   
+
+
 
                     p {
                         padding: 0;
@@ -302,6 +395,7 @@ div.last-tab {
                         width: auto;
                         text-align: center;
                         font-size: 25px;
+
                         @media all and (max-width:961px) {
                             font-size: 14px;
                         }
@@ -343,37 +437,54 @@ div.last-tab {
 
                 .under-select {
                     position: absolute;
-                    top: 100%;
+                    top: 0;
+                    padding-top: 50px;
                     width: 100%;
                     left: 0;
                     // height: 70px;
                     display: none;
-                    height: 500px;
-                    overflow-y: auto;
-                    overflow-x: hidden;
 
-                    z-index: 999;
+                    border-radius: 20px;
+
+
+
+
+
+                    z-index: 9;
                     background-color: white;
-                    border-radius: 10px;
-                    padding: 10px;
-
-                    &::-webkit-scrollbar {
-                        width: 0.5em;
-                        
-                       
-                    }
-                    &::-webkit-scrollbar-track {
-                        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        border-radius: 10px;
-                      background-color: grey;
-                      outline: 1px solid transparent;
-                    }
+                    padding-top: 40px !important;
+                    // padding: 10px;
 
 
+
+
+                    div.row {
+                        height: 500px;
+                        margin: 0 !important;
+                        overflow-y: scroll;
+                        // overflow-x: hidden;
+
+                        &::-webkit-scrollbar {
+                            width: 0.7em;
+                            padding-right: 10px;
+
+                        }
+
+                        &::-webkit-scrollbar-track {
+                            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            background-color: grey;
+                            outline: 1px solid transparent;
+                        }
+                    }
 
                 }
+
+
+
                 select.co-sel {
                     display: none !important;
                 }
@@ -583,6 +694,7 @@ div.last-tab {
                                 background-color: red;
                                 border: 2px solid white;
                             }
+
                             @media all and (max-width:992px) {
                                 margin: 5px 0;
                             }
@@ -596,16 +708,10 @@ div.last-tab {
         }
 
 
-        
+
     }
 
-    /**
- * Padding is set relative to the width
- * of the element, so here padding-top:60% is
- * a percentage of the width. This allows us 
- * to set the height as a ratio of the width
- *
- */
+
     .carousel,
     .carousel2,
     .carousel3 {
@@ -613,7 +719,7 @@ div.last-tab {
         position: relative;
         padding-top: 60%;
         overflow: hidden;
-       
+
         min-height: 550px !important;
 
 
@@ -635,12 +741,14 @@ div.last-tab {
             width: 1em;
             height: 0 !important;
         }
+
         &::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
         }
+
         &::-webkit-scrollbar-thumb {
-          background-color: transparent;
-          outline: 1px solid transparent;
+            background-color: transparent;
+            outline: 1px solid transparent;
         }
     }
 
@@ -858,12 +966,13 @@ div.last-tab {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        
+
 
         div.item {
 
             width: 300px;
             height: 450px;
+
             @media all and (max-width:992px) {
                 margin: 0 10px;
             }
@@ -960,7 +1069,7 @@ div.last-tab {
 
             p {
                 padding: 0;
-                margin: 0;  
+                margin: 0;
                 width: 100%;
                 text-align: left;
                 font-size: 10px;
@@ -982,7 +1091,7 @@ div.last-tab {
                     align-items: center;
                     align-content: center;
 
-                   
+
 
                     p {
                         text-align: center;
@@ -994,12 +1103,14 @@ div.last-tab {
 
             transition: all 0.2s linear;
             border: 2px solid transparent;
+
             &:hover {
                 border: 2px solid white;
+
                 a.btn-buy {
-                    background-color:red;
+                    background-color: red;
                     color: white !important;
-                    
+
                     border-color: red;
                 }
             }

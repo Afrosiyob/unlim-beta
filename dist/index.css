@@ -2,8 +2,24 @@
   margin-right: 0 !important;
   border-radius: 20px !important; }
 
-input, select, textarea {
+input,
+select,
+textarea {
   border-radius: 20px !important; }
+
+li.let {
+  color: #d40000;
+  padding: 10px;
+  pointer-events: none; }
+
+.map-item-1 {
+  position: relative; }
+  .map-item-1 input {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0; }
 
 .under-nav {
   position: absolute;
@@ -39,7 +55,21 @@ div.last-tab .left-item .inner-box div.item-box .row {
   justify-content: space-between;
   align-items: center;
   align-content: center; }
+  div.last-tab .left-item .inner-box div.item-box .row .last-text {
+    position: relative;
+    width: 100%;
+    color: transparent; }
+    div.last-tab .left-item .inner-box div.item-box .row .last-text p {
+      position: absolute;
+      left: 0;
+      top: -18px;
+      width: 200px; }
+      @media all and (max-width: 762px) {
+        div.last-tab .left-item .inner-box div.item-box .row .last-text p {
+          left: 20px;
+          top: -10px; } }
   div.last-tab .left-item .inner-box div.item-box .row div select {
+    border-radius: 10px !important;
     width: 100%; }
     @media all and (max-width: 576px) {
       div.last-tab .left-item .inner-box div.item-box .row div select {
@@ -47,9 +77,10 @@ div.last-tab .left-item .inner-box div.item-box .row {
   div.last-tab .left-item .inner-box div.item-box .row div p {
     font-style: italic;
     color: white;
-    font-weight: bold; }
+    padding: 0;
+    margin: 0; }
     div.last-tab .left-item .inner-box div.item-box .row div p span {
-      font-size: 40px; }
+      font-size: 30px; }
 div.last-tab .right-item {
   display: flex;
   flex-direction: column;
@@ -74,6 +105,8 @@ div.last-tab .right-item {
       display: flex;
       flex-direction: column; }
       div.last-tab .right-item fieldset .top-two p {
+        padding: 0;
+        margin: 0;
         width: 100%;
         text-align: left;
         color: #FFFFFF;
@@ -93,53 +126,70 @@ div.last-tab .right-item {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         align-content: flex-end; }
+        div.last-tab .right-item fieldset .top-one .form-check div.circle {
+          margin-right: 5px;
+          width: 18px;
+          height: 18px;
+          border-radius: 18px;
+          border: 2px solid white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          position: relative; }
+          div.last-tab .right-item fieldset .top-one .form-check div.circle .inner {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: transparent; }
+        div.last-tab .right-item fieldset .top-one .form-check .form-check-input[type=radio]:checked ~ div.circle > .inner {
+          background-color: white; }
         div.last-tab .right-item fieldset .top-one .form-check input {
+          display: none;
           margin-top: 20px; }
         div.last-tab .right-item fieldset .top-one .form-check label {
           color: white;
           font-weight: bolder; }
-      div.last-tab .right-item fieldset .top-one .form-check-input[type=radio]:not(:checked) + label:after,
-      div.last-tab .right-item fieldset .top-one .form-check-input[type=radio]:not(:checked) + label:before,
-      div.last-tab .right-item fieldset .top-one label.btn input[type=radio]:not(:checked) + label:after,
-      div.last-tab .right-item fieldset .top-one label.btn input[type=radio]:not(:checked) + label:before {
-        border: 2px solid white !important; }
-      div.last-tab .right-item fieldset .top-one .form-check-input[type=radio].with-gap:checked + label:after,
-      div.last-tab .right-item fieldset .top-one .form-check-input[type=radio]:checked + label:after,
-      div.last-tab .right-item fieldset .top-one label.btn input[type=radio].with-gap:checked + label:after,
-      div.last-tab .right-item fieldset .top-one label.btn input[type=radio]:checked + label:after {
-        background-color: white !important; }
+          div.last-tab .right-item fieldset .top-one .form-check label:hover {
+            cursor: pointer; }
   div.last-tab .right-item .under-text {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: flex-end; }
     div.last-tab .right-item .under-text h3 {
       color: white;
-      font-weight: bold;
+      font-weight: 600;
       display: flex;
-      flex-direction: row; }
-      div.last-tab .right-item .under-text h3 span {
-        font-size: 52px; }
+      flex-direction: row;
+      padding: 0;
+      margin: 0; }
+      div.last-tab .right-item .under-text h3 em {
+        padding: 0;
+        margin: 0; }
+        div.last-tab .right-item .under-text h3 em span {
+          font-size: 52px; }
     div.last-tab .right-item .under-text button {
+      height: 40px;
       background-color: #fff;
       color: red;
-      font-size: 32px;
-      padding: 10px 40px;
+      font-size: 22px;
+      line-height: 50%;
+      padding: 5px 50px !important;
       border-radius: 10px;
       border: none;
       outline: none;
       font-weight: bold;
-      margin-left: 20px; }
+      margin-left: 20px;
+      margin-bottom: 5px; }
 
 .section-tab {
-   /**
-* Padding is set relative to the width
-* of the element, so here padding-top:60% is
-* a percentage of the width. This allows us 
-* to set the height as a ratio of the width
-*
-*/
    /**
 * ==========================
 * Animation styles
@@ -223,6 +273,13 @@ div.last-tab .right-item {
   .section-tab .tab_content {
     background: transparent linear-gradient(180deg, #FF0000 0%, #800000 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 6px #00000029; }
+    .section-tab .tab_content .bg-img {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/Map.png");
+      background-repeat: no-repeat;
+      background-size: 85% auto;
+      background-position: right 15% bottom 10%; }
   .section-tab .wrapper-tab .tabs .container {
     display: flex;
     flex-direction: row;
@@ -285,25 +342,28 @@ div.last-tab .right-item {
         position: relative; }
         .section-tab .wrapper div.top-header div.sel-box .under-select {
           position: absolute;
-          top: 100%;
+          top: 0;
+          padding-top: 50px;
           width: 100%;
           left: 0;
           display: none;
-          height: 500px;
-          overflow-y: auto;
-          overflow-x: hidden;
-          z-index: 999;
+          border-radius: 20px;
+          z-index: 9;
           background-color: white;
-          border-radius: 10px;
-          padding: 10px; }
-          .section-tab .wrapper div.top-header div.sel-box .under-select::-webkit-scrollbar {
-            width: 0.5em; }
-          .section-tab .wrapper div.top-header div.sel-box .under-select::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); }
-          .section-tab .wrapper div.top-header div.sel-box .under-select::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            background-color: grey;
-            outline: 1px solid transparent; }
+          padding-top: 40px !important; }
+          .section-tab .wrapper div.top-header div.sel-box .under-select div.row {
+            height: 500px;
+            margin: 0 !important;
+            overflow-y: scroll; }
+            .section-tab .wrapper div.top-header div.sel-box .under-select div.row::-webkit-scrollbar {
+              width: 0.7em;
+              padding-right: 10px; }
+            .section-tab .wrapper div.top-header div.sel-box .under-select div.row::-webkit-scrollbar-track {
+              -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); }
+            .section-tab .wrapper div.top-header div.sel-box .under-select div.row::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              background-color: grey;
+              outline: 1px solid transparent; }
         .section-tab .wrapper div.top-header div.sel-box select.co-sel {
           display: none !important; }
         .section-tab .wrapper div.top-header div.sel-box .dropdown-select {
