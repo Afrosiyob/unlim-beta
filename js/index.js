@@ -151,6 +151,21 @@ $(document).ready(function () {
   });
 
 
+
+  // scswdcvswvcsvr
+
+  $('.map-filter-input').click(function (e) { 
+    e.preventDefault();
+    
+    $('.under-select').slideToggle();
+  });
+
+
+  $('.map-country-list li').click(function (e) { 
+    $('.under-select').slideUp();
+    
+  });
+
 // wefwefwefwef
 
 
