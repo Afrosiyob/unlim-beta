@@ -110,12 +110,15 @@ div.last-tab .right-item {
         width: 100%;
         text-align: left;
         color: #FFFFFF;
-        font-size: 12px; }
+        font-size: 12px;
+        text-decoration: none; }
     div.last-tab .right-item fieldset p {
       width: 100%;
       text-align: center;
       color: #FFFFFF;
-      font-size: 12px; }
+      font-size: 12px;
+      text-decoration: underline;
+      text-underline-position: under; }
     div.last-tab .right-item fieldset .top-one {
       display: flex;
       flex-direction: row;
