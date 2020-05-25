@@ -161,6 +161,31 @@ $(document).ready(function () {
     $(".under-select").slideUp();
   });
 
+
+  $('.prev1').click(function (e) { 
+    $('.arrow-left').trigger("click");
+    
+  });
+  $('.next1').click(function (e) { 
+    $('.arrow-right').trigger("click");
+    
+  });
+  $('.prev2').click(function (e) { 
+    $('.arrow-left2').trigger("click");
+    
+  });
+  $('.next2').click(function (e) { 
+    $('.arrow-right2').trigger("click");
+    
+  });
+  $('.prev3').click(function (e) { 
+    $('.arrow-left3').trigger("click");
+    
+  });
+  $('.next3').click(function (e) { 
+    $('.arrow-right3').trigger("click");
+    
+  });
   
 
   // wefwefwefwef

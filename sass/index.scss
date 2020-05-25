@@ -314,6 +314,36 @@ div.last-tab {
 
     .tab_item {
         display: none;
+        position: relative;
+        .prev {
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            color: white;
+            z-index: 999;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .next {
+            color: white;
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            z-index: 999;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+
     }
 
     .tab_item:first-child {
@@ -733,6 +763,8 @@ div.last-tab {
         overflow: hidden;
 
         min-height: 550px !important;
+
+       
 
 
     }
