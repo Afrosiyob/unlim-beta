@@ -1188,10 +1188,11 @@ div.last-tab {
             .top1 {
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 img {
-                    width: 110px;
-                    height: 34px;
+                    width: 100px;
+                    height: 24px;
                 }
 
                 span.right-span {
@@ -1211,12 +1212,13 @@ div.last-tab {
                         transform: skewX(20deg);
                         width: 100%;
                         height: 100%;
-                        font-weight: bolder;
+                        font-weight: 400;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         align-content: center;
                         top: 0;
+                        font-size: 28px;
                     }
 
                 }

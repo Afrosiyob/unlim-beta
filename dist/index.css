@@ -776,10 +776,11 @@ div.last-tab .right-item {
           margin: 0 10px; } }
       .section-tab .slide:nth-child(1) div.item .top1 {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
         .section-tab .slide:nth-child(1) div.item .top1 img {
-          width: 110px;
-          height: 34px; }
+          width: 100px;
+          height: 24px; }
         .section-tab .slide:nth-child(1) div.item .top1 span.right-span {
           background-color: red;
           border-radius: 5px;
@@ -793,12 +794,13 @@ div.last-tab .right-item {
             transform: skewX(20deg);
             width: 100%;
             height: 100%;
-            font-weight: bolder;
+            font-weight: 400;
             display: flex;
             justify-content: center;
             align-items: center;
             align-content: center;
-            top: 0; }
+            top: 0;
+            font-size: 28px; }
       .section-tab .slide:nth-child(1) div.item h1 {
         width: 100%;
         text-align: center;
