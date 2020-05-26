@@ -231,6 +231,15 @@ $(document).ready(function () {
 );
 
 
+$("select.left-select").change(function(){
+  
+  $('select.right-select').css({
+    "display": "inline"
+    
+  });
+
+});
+
   // wefwefwefwef
 
   /*
