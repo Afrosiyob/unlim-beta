@@ -223,8 +223,7 @@ $(document).ready(function () {
 
   $('.link-user').hover(function () {
     $(this).children("img").attr("src", "img/icons/sogin.png");
-    $(this).children("img").attr("width","20");
-    $(this).children("img").attr("height","20");
+
     
   }, function () {
     $(this).children("img").attr("src", "img/icons/user.svg");
