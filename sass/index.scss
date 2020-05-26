@@ -3,6 +3,45 @@
     border-radius: 20px !important;
 }
 
+
+.map-filter-input {
+    border: none !important;
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.nav-link {
+    position: relative;
+    &:hover {
+        span.line-top {
+            opacity: 1;
+        }
+    }
+    span.line-top {
+        transition: all 0.2s linear;
+        position: absolute;
+        opacity: 0;
+        width: 25px;
+        height: 1.5px;
+        background-color: #fff;
+        top: 0;
+        // left: 0;
+
+    }
+}
+
+.unlim-btn {
+    box-shadow: none !important;
+    transition: all 0.2s linear;
+    border: 1.5px solid white;
+    &:hover {
+        color: white;
+        background-color: rgb(173,0,0);
+      
+
+    }
+}
+
 input,
 select,
 textarea {
@@ -24,6 +63,21 @@ li.let {
         width: 100%;
         top: 0;
         left: 0;
+    }
+
+    span.close {
+        position: absolute;
+        z-index: 100;
+
+        right: 20px;
+        top: 8px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        i {
+            transition: all 0.2s linear;
+        }
+
     }
 }
 
@@ -328,6 +382,7 @@ div.last-tab {
                 cursor: pointer;
             }
         }
+
 
         .next {
             color: white;

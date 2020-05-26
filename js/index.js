@@ -147,19 +147,44 @@ $(document).ready(function () {
 
   // scswdcvswvcsvr
 
-  $(".map-filter-input").click(function (e) {
-    e.preventDefault();
+ 
 
+
+
+
+
+
+  var counter = 0;
+
+  $(".select-con").click(function (e) {
+
+    
     $(".under-select").slideToggle();
 
     $('.map-filter-input').not(this).click(function(){
       $(".under-select").slideUp();
     })
+    
+
+    if (counter%2==0) {
+     console.log("hello");
+     $(this).css({
+      'transform': 'rotateZ(180deg)'
+       
+     });
+     
+    } else {
+      console.log("world");
+      $(this).css({
+        'transform': 'rotateZ(0deg)'
+         
+       });
+    }
+
+    counter++;
   });
 
-  $(".map-country-list li").click(function (e) {
-    $(".under-select").slideUp();
-  });
+
 
 
   $('.prev1').click(function (e) { 
@@ -187,6 +212,26 @@ $(document).ready(function () {
     
   });
   
+ 
+
+  $('.link-bas').hover(function () {
+      $(this).children("img").attr("src", "img/imgb.png");
+      
+    }, function () {
+      $(this).children("img").attr("src", "img/icons/Basket2.svg");
+    }
+  );
+
+  $('.link-user').hover(function () {
+    $(this).children("img").attr("src", "img/icons/sogin.png");
+    $(this).children("img").attr("width","20");
+    $(this).children("img").attr("height","20");
+    
+  }, function () {
+    $(this).children("img").attr("src", "img/icons/user.svg");
+  }
+);
+
 
   // wefwefwefwef
 

@@ -2,6 +2,32 @@
   margin-right: 0 !important;
   border-radius: 20px !important; }
 
+.map-filter-input {
+  border: none !important;
+  box-shadow: 0px 3px 6px #00000029;
+  background: #FFFFFF 0% 0% no-repeat padding-box; }
+
+.nav-link {
+  position: relative; }
+  .nav-link:hover span.line-top {
+    opacity: 1; }
+  .nav-link span.line-top {
+    transition: all 0.2s linear;
+    position: absolute;
+    opacity: 0;
+    width: 25px;
+    height: 1.5px;
+    background-color: #fff;
+    top: 0; }
+
+.unlim-btn {
+  box-shadow: none !important;
+  transition: all 0.2s linear;
+  border: 1.5px solid white; }
+  .unlim-btn:hover {
+    color: white;
+    background-color: #ad0000; }
+
 input,
 select,
 textarea {
@@ -20,6 +46,16 @@ li.let {
     width: 100%;
     top: 0;
     left: 0; }
+  .map-item-1 span.close {
+    position: absolute;
+    z-index: 100;
+    right: 20px;
+    top: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer; }
+    .map-item-1 span.close i {
+      transition: all 0.2s linear; }
 
 .under-nav {
   position: absolute;
