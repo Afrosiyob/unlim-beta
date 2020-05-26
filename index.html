@@ -35,8 +35,9 @@
   <body>
     <!-- modal -->
     <!-- Modal -->
+
     <div
-      class="modal fade"
+      class="modal fade modal-add"
       id="exampleModal"
       tabindex="-1"
       role="dialog"
@@ -47,7 +48,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Modal title
+              <span class="modal-line"></span>
+              compatibile devices
             </h5>
             <button
               type="button"
@@ -59,19 +61,74 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
-            </button>
+            <div class="title-box">
+              <p>Apple iPhones</p>
+              <span class="tit-line"></span>
+            </div>
+
+            <ul>
+              <li>iPhone 11</li>
+              <li>iPhone 11 Pro</li>
+              <li>iPhone 11 Pro Max</li>
+              <li>iPhone XS</li>
+              <li>iPhone XS Max</li>
+              <li>iPhone XS Max Global</li>
+              <li>iPhone XR</li>
+            </ul>
+
+            <div class="title-box">
+              <p>Apple iPads</p>
+              <span class="tit-line"></span>
+            </div>
+
+            <ul>
+              <li>iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)</li>
+              <li>iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)</li>
+              <li>iPad mini 5th Gen</li>
+              <li>iPad Air 3rd Gen</li>
+            </ul>
+            <div class="title-box">
+              <p>Google</p>
+              <span class="tit-line"></span>
+            </div>
+
+            <ul>
+              <li>Pixel 3</li>
+              <li>Pixel 3 XL</li>
+              <li>Pixel 4</li>
+            </ul>
+            <div class="title-box">
+              <p>Samsung</p>
+              <span class="tit-line"></span>
+            </div>
+
+            <ul>
+              <li>Galaxy Fold LTE</li>
+              <li>Samsung Galaxy Z Flip</li>
+              <li>Samsung Galaxy S20, s20+ and S20 Ultra</li>
+              <li style="list-style: none;">
+                (Single SIM Nano-SIM and/or eSIM models )
+              </li>
+            </ul>
+
+            <div class="under-footer">
+              <ul>
+                <li>* Not compatible with carrier-locked phone</li>
+                <li>
+                  * Not compatible with iPhone XR, XS models and 11 models
+                  purchased in Hong Kong, Macau and Mainland China
+                </li>
+                <li>
+                  * Not compatible with iPhones with 2 physical SIM card slots
+                </li>
+                <li>
+                  * Not compatible with Pixel devices purchased in Australia
+                </li>
+                <li>
+                  * Not compatible with devices on Android Q Beta versions
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1395,6 +1452,7 @@
 
                         <p class="pt-1">
                           <a
+                          style="color: azure;"
                             href="#!"
                             data-toggle="modal"
                             data-target="#exampleModal"

@@ -1,3 +1,83 @@
+
+
+.modal-add {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 20px !important;
+            background: linear-gradient(rgb(163,159,159), rgb(48,48,48));
+            .modal-header {
+                border: none !important;
+                .modal-title {
+
+                    text-transform: uppercase;
+                  
+                    text-align: center !important;
+                    width: 100%;
+                    color: white !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+
+                    .modal-line {
+                        width: 70px;
+                        height: 2px;
+                        background-color: red;
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 20px;
+
+                .under-footer {
+                    border-radius: 20px;
+                    border: 1px solid white;
+                    padding: 10px;
+                    ul {
+                        list-style: none;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+
+                }
+
+                ul {
+                    li {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+                .title-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+
+                    p {
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 500;
+                        padding: 0;
+                        margin: 0;
+                        
+                    }
+                    span.tit-line {
+                        width: 70%;
+                        height: 1.5px;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 .map-filter div[class^="map-item-"] {
     margin-right: 0 !important;
     border-radius: 20px !important;
