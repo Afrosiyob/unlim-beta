@@ -26,10 +26,57 @@
 
     <link rel="stylesheet" href="dist/main.css" />
     <link rel="stylesheet" href="dist/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   </head>
 
   <body>
+    <!-- modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ========= Background Blurry Overlay ========= -->
     <div style="display: none;">
       <div class="backdrop-image">
@@ -131,10 +178,14 @@
               /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#country-data"> <span class="line-top"></span> OUR SERVICES </a>
+              <a class="nav-link" href="#country-data">
+                <span class="line-top"></span> OUR SERVICES
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="map.html"> <span class="line-top"></span> COVERAGE</a>
+              <a class="nav-link" href="map.html">
+                <span class="line-top"></span> COVERAGE</a
+              >
             </li>
             <li class="nav-item ml-2rem">
               <a href="cooperation.html" class="unlim-btn">COOPERATION</a>
@@ -201,7 +252,10 @@
             </li>
 
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link extra-bar-toggle-large link-user">
+              <a
+                href="dashboard.html"
+                class="nav-link extra-bar-toggle-large link-user"
+              >
                 <img src="img/icons/user.svg" alt="user" class="user-btn" />
               </a>
             </li>
@@ -319,7 +373,6 @@
           <div class="bg-img">
             <form action="#!">
               <div class="container">
-                
                 <div class="tab_item">
                   <div class="prev prev1">
                     <
@@ -494,13 +547,10 @@
                       </div>
                       <div class="arrow arrow-left"></div>
                       <div class="arrow arrow-right"></div>
-
-                      
                     </div>
                   </div>
                 </div>
                 <div class="tab_item">
-
                   <div class="prev prev2">
                     <
                   </div>
@@ -727,8 +777,9 @@
                             readonly
                           />
 
-                          <span class="close"><i class="fas fa-angle-down select-con"></i></span>
-
+                          <span class="close"
+                            ><i class="fas fa-angle-down select-con"></i
+                          ></span>
                         </div>
 
                         <div class="under-select">
@@ -774,7 +825,6 @@
                               </ul>
 
                               <ul class="map-country-list col-md-2">
-                             
                                 <li>COTE D'IVOIRE (IVORY COAST)</li>
                                 <li>CROATIA</li>
                                 <li>CURACAO</li>
@@ -810,8 +860,6 @@
                               </ul>
 
                               <ul class="map-country-list col-md-2">
-                                
-                               
                                 <li>HAITI</li>
                                 <li>HAWAII - USA</li>
                                 <li>HONDURAS</li>
@@ -845,7 +893,6 @@
                                 <li>MACAU</li>
                                 <li>MACEDONIA</li>
                                 <li>MADAGASCAR</li>
-                              
                               </ul>
 
                               <ul class="map-country-list col-md-2">
@@ -882,7 +929,6 @@
                                 <li>PAPUA NEW GUINEA</li>
                                 <li>PARAGUAY</li>
                                 <li>PERU</li>
-                                
                               </ul>
 
                               <ul class="map-country-list col-md-2">
@@ -1336,7 +1382,7 @@
                                 height="37"
                                 alt="left"
                               />
-                              eSim</label
+                              Sim</label
                             >
                           </div>
                         </div>
@@ -1347,12 +1393,19 @@
                           <p>• Instant Activation</p>
                         </div>
 
-                        <p class="pt-1">* View compatibile devices</p>
+                        <p class="pt-1">
+                          <a
+                            href="#!"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            >* View compatibile devices</a
+                          >
+                        </p>
                       </fieldset>
 
                       <div class="under-text my-3">
                         <h3>
-                          <em>Balanse $ <span>0</span> </em>
+                          <em>Balance $ <span>0</span> </em>
                         </h3>
                         <button>
                           BUY
@@ -1872,7 +1925,6 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 

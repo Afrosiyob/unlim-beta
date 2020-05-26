@@ -84,7 +84,7 @@ li.let {
 
 div.last-tab .left-item .inner-box h5 {
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0;
   margin: 0; }
 div.last-tab .left-item .inner-box div.item-box .row {
@@ -208,12 +208,13 @@ div.last-tab .right-item {
       display: flex;
       flex-direction: row;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      font-size: 24px; }
       div.last-tab .right-item .under-text h3 em {
         padding: 0;
         margin: 0; }
         div.last-tab .right-item .under-text h3 em span {
-          font-size: 52px; }
+          font-size: 45px; }
     div.last-tab .right-item .under-text button {
       height: 40px;
       background-color: #fff;
