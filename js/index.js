@@ -159,14 +159,13 @@ $(document).ready(function () {
   $(".select-con").click(function (e) {
 
     
-    $(".under-select").slideToggle();
+    
 
-    $('.map-filter-input').not(this).click(function(){
-      $(".under-select").slideUp();
-    })
+    $(".under-select").slideToggle();
     
 
     if (counter%2==0) {
+     
      console.log("hello");
      $(this).css({
       'transform': 'rotateZ(180deg)'
