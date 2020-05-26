@@ -368,6 +368,10 @@ div.last-tab .right-item {
       font-size: 32px; }
       .section-tab .tab_item .prev:hover {
         cursor: pointer; }
+    .section-tab .tab_item .prev2, .section-tab .tab_item .next2 {
+      top: 60%  !important; }
+    .section-tab .tab_item .prev3, .section-tab .tab_item .next3 {
+      top: 55%  !important; }
     .section-tab .tab_item .next {
       color: white;
       position: absolute;

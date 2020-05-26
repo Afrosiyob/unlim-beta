@@ -462,7 +462,19 @@ div.last-tab {
             &:hover {
                 cursor: pointer;
             }
+
+
         }
+
+        .prev2, .next2 {
+            top: 60%  !important;
+        }
+
+        .prev3, .next3 {
+            top: 55%  !important;
+        }
+
+        
 
 
         .next {
@@ -1107,6 +1119,7 @@ div.last-tab {
     }
 
     .arrow-left2 {
+        
         left: -20px;
         transform: rotate(225deg);
     }
