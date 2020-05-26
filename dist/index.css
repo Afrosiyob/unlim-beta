@@ -368,6 +368,9 @@ div.last-tab .right-item {
       font-size: 32px; }
       .section-tab .tab_item .prev:hover {
         cursor: pointer; }
+      @media all and (max-width: 768px) {
+        .section-tab .tab_item .prev {
+          display: none !important; } }
     .section-tab .tab_item .prev2, .section-tab .tab_item .next2 {
       top: 60%  !important; }
     .section-tab .tab_item .prev3, .section-tab .tab_item .next3 {
@@ -383,6 +386,9 @@ div.last-tab .right-item {
       font-size: 32px; }
       .section-tab .tab_item .next:hover {
         cursor: pointer; }
+      @media all and (max-width: 768px) {
+        .section-tab .tab_item .next {
+          display: none !important; } }
   .section-tab .tab_item:first-child {
     display: block; }
   .section-tab .tab_content {
