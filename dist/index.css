@@ -760,7 +760,7 @@ div.last-tab .right-item {
     align-content: center; }
     .section-tab .slide:nth-child(1) div.item {
       width: 300px;
-      height: 450px;
+      height: 470px;
       background: transparent linear-gradient(180deg, #878787D6 0%, #060606E8 100%) 0% 0% no-repeat padding-box;
       border-radius: 20px;
       display: flex;
@@ -803,8 +803,18 @@ div.last-tab .right-item {
         width: 100%;
         text-align: center;
         color: white;
-        font-size: 80px;
-        font-weight: bold; }
+        font-size: 100px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: center; }
+        .section-tab .slide:nth-child(1) div.item h1 span.let {
+          padding: 0;
+          margin: 0;
+          font-size: 120px; }
       .section-tab .slide:nth-child(1) div.item .top2 {
         display: flex;
         flex-direction: column;
@@ -814,7 +824,8 @@ div.last-tab .right-item {
         .section-tab .slide:nth-child(1) div.item .top2 h4 {
           color: white;
           padding: 0;
-          margin: 0; }
+          margin: 0;
+          font-size: 20px; }
         .section-tab .slide:nth-child(1) div.item .top2 span.line {
           width: 200px;
           height: 1px;
@@ -823,13 +834,15 @@ div.last-tab .right-item {
         width: 100%;
         color: white;
         font-weight: 500;
-        text-align: center; }
+        text-align: center;
+        font-size: 28px; }
         .section-tab .slide:nth-child(1) div.item h2 em span {
           font-weight: 500;
           font-size: 42px; }
       .section-tab .slide:nth-child(1) div.item a.btn-buy {
-        width: 200px;
+        width: 150px;
         height: 40px;
+        margin-bottom: 10px;
         background-color: transparent;
         border: 2px solid white;
         display: flex;

@@ -1170,7 +1170,7 @@ div.last-tab {
         div.item {
 
             width: 300px;
-            height: 450px;
+            height: 470px;
 
             @media all and (max-width:992px) {
                 margin: 0 10px;
@@ -1227,8 +1227,19 @@ div.last-tab {
                 width: 100%;
                 text-align: center;
                 color: white;
-                font-size: 80px;
-                font-weight: bold;
+                font-size: 100px;
+                font-weight: 600;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                align-content: center;
+                span.let {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 120px;
+                }
             }
 
             .top2 {
@@ -1242,6 +1253,7 @@ div.last-tab {
                     color: white;
                     padding: 0;
                     margin: 0;
+                    font-size: 20px;
                 }
 
                 span.line {
@@ -1256,6 +1268,7 @@ div.last-tab {
                 color: white;
                 font-weight: 500;
                 text-align: center;
+                font-size: 28px;
 
                 em {
                     span {
@@ -1266,8 +1279,9 @@ div.last-tab {
             }
 
             a.btn-buy {
-                width: 200px;
+                width: 150px;
                 height: 40px;
+                margin-bottom: 10px;
                 background-color: transparent;
                 border: 2px solid white;
                 display: flex;
