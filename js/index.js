@@ -164,12 +164,12 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map1.png')"
+      "background-image": "url('../img/maps/Map1.png') !important"
       
     });
     $('.bg-text-img').css({
      
-      "background-image": "none"
+      "background-image": "none !important"
       
     });
 
@@ -180,12 +180,12 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map2.png')"
+      "background-image": "url('../img/maps/Map2.png') !important"
       
     });
     $('.bg-text-img').css({
      
-      "background-image": "none"
+      "background-image": "none !important"
       
     });
 
@@ -197,12 +197,12 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map3.png')"
+      "background-image": "url('../img/maps/Map3.png') !important"
       
     });
     $('.bg-text-img').css({
      
-      "background-image": "none"
+      "background-image": "none !important"
       
     });
 
@@ -214,12 +214,12 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/Mask.png')"
+      "background-image": "url('../img/Mask.png') !important"
       
     });
     $('.bg-text-img').css({
      
-      "background-image": "url('../img/icons/text.png')"
+      "background-image": "url('../img/icons/text.png') !important"
       
     });
 
