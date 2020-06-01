@@ -1,4 +1,70 @@
 
+.user-btn {
+
+    width: 22px !important;
+}
+
+.li-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.li-bas {
+    position: relative;
+    span {
+        position: absolute;
+        left: 120%;
+        top: 30%;
+        color: white !important;
+        transform: scale(1.1);
+        background-color: rgb(183,1,5) !important;
+        border: 1.5px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+}
+
+.link-bas {
+    width: 24px !important;
+}
+
+.link-user {
+    // background-color:blue;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1.5px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: all 0.2s linear;
+    &:hover {
+        border: 1.5px solid white;
+    }
+}
+
+
+.ni-li {
+    transition: all 0.2s linear;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.carousel-caption {
+    .carousel-title {
+        h1 {
+            font-size: 45px !important;
+        }
+    }
+}
 
 
 .right-select {
@@ -198,6 +264,11 @@ li.let {
             li {
                 a {
                     font-size: 13px;
+                }
+                transition: all 0.2s linear;
+
+                &:hover {
+                    transform: scale(1.2);
                 }
             }
         }
@@ -445,7 +516,7 @@ div.last-tab {
 
     span.active {
         color: white;
-        background-color: red;
+        background-color: red !important;
 
         div.line {
             background-color: white !important;
@@ -518,13 +589,13 @@ div.last-tab {
         .bg-img {
             width: 100%;
             height: 100%;
-            background-image: url('../img/Mask.png');
+            background-image: url('../img/maps/Map1.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position:center;
 
             .bg-text-img {
-                background-image: url('../img/icons/text.png');
+                background-image: none;
                 background-repeat: no-repeat;
                 background-size: 25%  auto;
                 background-position: 85% 70%;
@@ -556,6 +627,8 @@ div.last-tab {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    background-color: #F7F7F7;
+                    
 
 
 

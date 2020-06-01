@@ -223,8 +223,8 @@
         </ul>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mt-4">
-            <li class="nav-item drop-down-btn">
+          <ul class="navbar-nav top-navbar-nav ml-auto mt-4">
+            <li class="nav-item drop-down-btn ni-li">
               <a class="nav-link" href="#!">
                 <span class="line-top"></span>
                 PLANS
@@ -234,12 +234,12 @@
                   alt=""
               /></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ml-1 ni-li">
               <a class="nav-link" href="#country-data">
                 <span class="line-top"></span> OUR SERVICES
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ml-1 ni-li">
               <a class="nav-link" href="map.html">
                 <span class="line-top"></span> COVERAGE</a
               >
@@ -249,7 +249,7 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav mt-4">
+          <ul class="navbar-nav mt-4 ml-auto">
             <li class="nav-item dropdown mr-1">
               <a
                 class="nav-link"
@@ -308,7 +308,7 @@
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item li-user">
               <a
                 href="dashboard.html"
                 class="nav-link extra-bar-toggle-large link-user"
@@ -316,10 +316,11 @@
                 <img src="img/icons/user.svg" alt="user" class="user-btn" />
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item li-bas">
               <a href="#!" class="nav-link link-bas">
                 <img src="img/icons/Basket2.svg" class="user-btn" alt="bra" />
               </a>
+              <span class="badge badge-pill">1</span>
             </li>
           </ul>
         </div>
@@ -350,7 +351,7 @@
             alt="slide"
           />
           <div class="carousel-caption">
-            <div class="offset-md-6 col-md-6 col-sm-12 carousel-title">
+            <div class="offset-md-6 col-md-8 col-sm-12 carousel-title">
               <span class="red-element"></span>
               <h1>
                 Affordable communication around the world,
@@ -371,7 +372,7 @@
             alt="slide"
           />
           <div class="carousel-caption">
-            <div class="offset-md-6 col-md-6 col-sm-12 carousel-title">
+            <div class="offset-md-6 col-md-8 col-sm-12 carousel-title">
               <span class="red-element"></span>
               <h1>
                 Affordable communication around the world,
@@ -392,7 +393,7 @@
             alt="slide"
           />
           <div class="carousel-caption">
-            <div class="offset-md-6 col-md-6 col-sm-12 carousel-title">
+            <div class="offset-md-6 col-md-8 col-sm-12 carousel-title">
               <span class="red-element"></span>
               <h1>
                 Affordable communication around the world,
@@ -404,29 +405,31 @@
       </div>
     </div>
 
+
+
     <div class="section-tab my-5">
       <div class="wrapper-tab">
         <div class="tabs">
           <div class="container">
-            <span class="tab">
+            <span class="tab tab1" value="bg-map1" >
               <div class="line line-one"></div>
               <p>Worldwide Plan</p>
             </span>
-            <span class="tab"
+            <span class="tab tab2" value="bg-map2"
               ><div class="line line-two"></div>
               <p>Region Plan</p></span
             >
-            <span class="tab"
+            <span class="tab tab3" value="bg-map3"
               ><div class="line line-three"></div>
               <p>Country Plan</p></span
             >
-            <span class="tab">
+            <span class="tab tab4">
               <div class="line line-four"></div>
               <p>Personal Plan</p></span
             >
           </div>
         </div>
-        <div class="tab_content">
+        <div class="tab_content bg-images">
           <div class="bg-img">
             <div class="bg-text-img">
               <form action="#!">
@@ -841,10 +844,10 @@
                           <div class="map-item-1 flex-grow-1 w-100">
                             <input
                               type="text"
-                              class="map-filter-input w-100 mb-3"
+                              class="map-filter-input chosen_country_inp w-100 mb-3"
                               id="chosen_country"
                               placeholder="Select the country below"
-                              readonly
+                         readonly
                             />
 
                             <span class="close"

@@ -126,6 +126,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+
+
+
   $(".wrapper-tab .tab")
     .click(function () {
       $(".wrapper-tab .tab")
@@ -148,11 +151,85 @@ $(document).ready(function () {
   // scswdcvswvcsvr
 
  
+  $('.tab1').click(function (e) { 
+    e.preventDefault();
+     
+
+    $('.bg-img').css({
+     
+      "background-image": "url('../img/maps/Map1.png')"
+      
+    });
+    $('.bg-text-img').css({
+     
+      "background-image": "none"
+      
+    });
+
+  });
+  $('.tab2').click(function (e) { 
+    e.preventDefault();
+     
+
+    $('.bg-img').css({
+     
+      "background-image": "url('../img/maps/Map2.png')"
+      
+    });
+    $('.bg-text-img').css({
+     
+      "background-image": "none"
+      
+    });
+
+  });
+
+  $('.tab3').click(function (e) { 
+    e.preventDefault();
+     
+
+    $('.bg-img').css({
+     
+      "background-image": "url('../img/maps/Map3.png')"
+      
+    });
+    $('.bg-text-img').css({
+     
+      "background-image": "none"
+      
+    });
+
+  });
+
+  $('.tab4').click(function (e) { 
+    e.preventDefault();
+     
+
+    $('.bg-img').css({
+     
+      "background-image": "url('../img/Mask.png')"
+      
+    });
+    $('.bg-text-img').css({
+     
+      "background-image": "url('../img/icons/text.png')"
+      
+    });
+
+  });
 
 
 
 
 
+  $('.map-country-list').children('li').click(function(){
+    $('#chosen_country').attr('value', $(this).text())
+    $('#chosen_country').val($(this).text())
+    
+    
+    $('.map-country-list').children('li').removeClass('active')
+    $(this).addClass('active')
+  });
 
   var counter = 0;
 
@@ -166,7 +243,7 @@ $(document).ready(function () {
 
     if (counter%2==0) {
      
-     console.log("hello");
+   
      $(this).css({
       'transform': 'rotateZ(180deg)'
        
@@ -221,14 +298,14 @@ $(document).ready(function () {
     }
   );
 
-  $('.link-user').hover(function () {
-    $(this).children("img").attr("src", "img/icons/sogin.png");
+//   $('.link-user').hover(function () {
+//     $(this).children("img").attr("src", "img/icons/sogin.png");
 
     
-  }, function () {
-    $(this).children("img").attr("src", "img/icons/user.svg");
-  }
-);
+//   }, function () {
+//     $(this).children("img").attr("src", "img/icons/user.svg");
+//   }
+// );
 
 
 $("select.left-select").change(function(){
