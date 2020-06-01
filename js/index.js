@@ -36,6 +36,9 @@ function create_custom_dropdowns() {
   );
 }
 
+
+
+
 $(document).on("click", ".dropdown-select", function (event) {
   if ($(event.target).hasClass("dd-searchbox")) {
     return;
@@ -124,6 +127,10 @@ $(document).on("keydown", ".dropdown-select", function (event) {
 $(document).ready(function () {
   create_custom_dropdowns();
 });
+
+
+
+
 
 $(document).ready(function () {
 
@@ -310,7 +317,7 @@ $(document).ready(function () {
 
 $("select.left-select").change(function(){
   
-  $('select.right-select').css({
+  $('div.right-select').css({
     "display": "inline"
     
   });
