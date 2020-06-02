@@ -30,6 +30,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css">
+  
   </head>
 
   <body>
@@ -840,14 +843,14 @@
                         <h3>PLEASE SELECT THE REGION</h3>
                         <span class="my-2 line"></span>
 
-                        <div class="sel-box mt-4">
+                        <div class="sel-box my-4">
                           <div class="map-item-1 flex-grow-1 w-100">
                             <input
                               type="text"
                               class="map-filter-input chosen_country_inp w-100 mb-3"
                               id="chosen_country"
                               placeholder="Select the country below"
-                         readonly
+                              readonly
                             />
 
                             <span class="close"
@@ -1269,19 +1272,26 @@
                                   height="50"
                                 />
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                
+                              <select class="form-control form-control-xs selectpicker left-select" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                <option value="" selected>Select loaction</option>
+                                <option value=""> one  location</option>
+                                <option value=""> two  location</option>
+                                <option value=""> three  location</option>
+                                <option value=""> four  location</option>
+                                <option value=""> five  location</option>
+                                <option value=""> six  location</option>
                               </select>
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <div class="right-select">
-                                  <select name="" class="co-sel">
-                                    <option class="let">A</option>
+
+
+                              <div class="col-sm-4 sel-box-last test-bos">
+                               
+                               <div class="right-select">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="500" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                    <option selected> Select c</option>
+                                    <option  class="let">A</option>
                                     <option>ALBANIA</option>
                                     <option>ALGERIA</option>
                                     <option>ANGUILLA</option>
@@ -1379,7 +1389,7 @@
                                     <option>MACAU</option>
                                     <option>MACEDONIA</option>
                                     <option>MADAGASCAR</option>
-                                    <option>MALAWI</option>
+                                    <option value="MALAWI" >MALAWI</option>
                                     <option>MALAYSIA</option>
                                     <option>MALTA</option>
                                     <option>MARTINIQUE</option>
@@ -1470,12 +1480,17 @@
                                     <option class="let">Z</option>
                                     <option>ZAMBIA</option>
                                     <option>ZIMBABWE</option>
-                                    
                                 </select>
-                                </div>
-
+                               </div>
+                               
                                
                               </div>
+
+
+
+
+
+
                               <div class="col-sm-2"></div>
                             </div>
                           </div>
@@ -1494,23 +1509,27 @@
                                   height="30"
                                 />
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
-                              </select>
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter Gb</option>
+                                  <option value="">1 Gb</option>
+                                  <option value="">2 Gb</option>
+                                  <option value="">3 Gb</option>
+                                  <option value="">4 Gb</option>
+                                  <option value="">5 Gb</option>
+                                  <option value="">6 Gb</option>
+                                </select>
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter period</option>
+                                  <option value=""> 1 day </option>
+                                  <option value="">7 days </option>
+                                  <option value="">14 days </option>
+                                  <option value="">28 days </option>
+                                  <option value="">56 days </option>
                                   
-                              </select>
+                                </select>
                               </div>
                               <div class="col-sm-2 last-text">
                                 .
@@ -1535,23 +1554,27 @@
                                   height="35"
                                 />
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
-                              </select>
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter period</option>
+                                  <option value=""> 1 month </option>
+                                  <option value="">2 month</option>
+                                  <option value="">3 month</option>
+                                  <option value="">4 month</option>
+                                  <option value="">5 month</option>
+                                  <option value="">6 month</option>
+                                </select>
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
-                              </select>
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter period</option>
+                                  <option value=""> 1 month </option>
+                                  <option value="">2 month</option>
+                                  <option value="">3 month</option>
+                                  <option value="">4 month</option>
+                                  <option value="">5 month</option>
+                                  <option value="">6 month</option>
+                                </select>
                               </div>
                               <div class="col-sm-2 last-text">
                                 .
@@ -1576,14 +1599,16 @@
                                   height="56"
                                 />
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
-                              </select>
+                              <div class="col-sm-4 sel-box-last test-bos">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter period</option>
+                                  <option value=""> 1 month </option>
+                                  <option value="">2 month</option>
+                                  <option value="">3 month</option>
+                                  <option value="">4 month</option>
+                                  <option value="">5 month</option>
+                                  <option value="">6 month</option>
+                                </select>
                               </div>
                               <div class="col-sm-4"></div>
                               <div class="col-sm-2 last-text">
@@ -1609,14 +1634,16 @@
                                   height="35"
                                 />
                               </div>
-                              <div class="col-sm-4 sel-box-last">
-                                <select name="" class="co-sel left-select">
-                                  <option value="1">1 Gb</option>
-                                  <option value="2">2 Gb</option>
-                                  <option value="3">3 Gb</option>
-                                  <option value="4">4 Gb</option>
-                                  
-                              </select>
+                              <div class="col-sm-4 test-bos ">
+                                <select class="form-control form-control-xs selectpicker" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%">
+                                  <option value="" selected>Enter period</option>
+                                  <option value=""> 1 month </option>
+                                  <option value="">2 month</option>
+                                  <option value="">3 month</option>
+                                  <option value="">4 month</option>
+                                  <option value="">5 month</option>
+                                  <option value="">6 month</option>
+                                </select>
                               </div>
                               <div class="col-sm-4"></div>
                               <div class="col-sm-2 last-text">
@@ -1631,7 +1658,7 @@
                       </div>
                       <div class="col-md-5 col-sm-12 right-item">
                         <fieldset>
-                          <legend>eSim or Sim</legend>
+                          <legend>Your card</legend>
                           <div class="top-one">
                             <div class="form-check">
                               <input
@@ -1653,10 +1680,19 @@
                                   height="37"
                                   alt="left"
                                 />
-                                eSim</label
+                                eSim 
+                                
+                                 <span class="pop">  <a
+                                  style="color: azure;"
+                                  href="#!"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal"
+                                  > ? </a
+                                > </span>  
+                                </label
                               >
                             </div>
-                            <div class="form-check">
+                            <div class="form-check right-form">
                               <input
                                 type="radio"
                                 class="form-check-input"
@@ -1676,18 +1712,27 @@
                                   height="37"
                                   alt="left"
                                 />
-                                Sim</label
+                                Sim
+                                
+                                <span class="pop">  <a
+                                  style="color: azure;"
+                                  href="#!"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal"
+                                  > ? </a
+                                > </span> 
+                                </label
                               >
                             </div>
                           </div>
 
-                          <div class="top-two mt-3">
+                          <!-- <div class="top-two mt-3">
                             <p>• Compatible with eSIM phones *</p>
                             <p>• No hassle of changing SIM cards</p>
                             <p>• Instant Activation</p>
-                          </div>
+                          </div> -->
 
-                          <p class="pt-1">
+                          <!-- <p class="pt-1">
                             <a
                               style="color: azure;"
                               href="#!"
@@ -1695,7 +1740,7 @@
                               data-target="#exampleModal"
                               >* View compatibile devices</a
                             >
-                          </p>
+                          </p> -->
                         </fieldset>
 
                         <div class="under-text my-3">
@@ -2224,7 +2269,8 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
     <script src="js/index.js"></script>
