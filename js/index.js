@@ -2033,7 +2033,7 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map1.png')"
+      "background-image": "url('../img/Map1.png')"
       
     });
     $('.bg-text-img').css({
@@ -2049,7 +2049,7 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map2.png')"
+      "background-image": "url('../img/Map2.png')"
       
     });
     $('.bg-text-img').css({
@@ -2066,7 +2066,7 @@ $(document).ready(function () {
 
     $('.bg-img').css({
      
-      "background-image": "url('../img/maps/Map3.png')"
+      "background-image": "url('../img/Map3.png')"
       
     });
     $('.bg-text-img').css({
